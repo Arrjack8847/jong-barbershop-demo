@@ -1,14 +1,12 @@
 /* Jong Barbershop — bilingual, accessible, static-site interactions.
-   Business contacts are intentionally unverified; no outgoing contact links exist. */
+   WhatsApp and map destination confirmed by the user. This remains an unofficial portfolio concept. */
 (() => {
   "use strict";
 
   // One source of truth. Add owner-confirmed values only after authorization.
   const CONTACT = Object.freeze({
-    verified: false,
-    whatsapp: null,
-    telephone: null,
-    directions: null
+    whatsapp: "60189854070",
+    directions: "https://www.google.com/maps/place/Jong+Barbershop+Puchong/@3.0002583,101.5947656,15z/data=!4m15!1m8!3m7!1s0x31cdb366edb04e3d:0xb997924c7971b6aa!2sJong+Barbershop+Puchong!8m2!3d3.0002583!4d101.5947656!10e5!16s%2Fg%2F11h5rxt5z_!3m5!1s0x31cdb366edb04e3d:0xb997924c7971b6aa!8m2!3d3.0002583!4d101.5947656!16s%2Fg%2F11h5rxt5z_?entry=ttu"
   });
 
   const translations = {
@@ -17,12 +15,12 @@
       backTop: "Jong Barbershop — ke utama",
       navLabel: "Navigasi utama", mobileNavLabel: "Navigasi telefon", menuDialog: "Menu navigasi",
       langLabel: "Bahasa laman web", menuOpen: "Buka menu", menuClose: "Tutup menu", menuButton: "Menu",
-      navHome: "Utama", navGallery: "Hasil Potongan", navAbout: "Tentang Jong", navContact: "Lokasi",
+      navHome: "Utama", navGallery: "Hasil Potongan", navAbout: "Tentang Jong", navContact: "Lokasi & Hubungi",
       menuCaption: "Jong Barbershop · Konsep portfolio",
       heroEyebrow: "JONG BARBERSHOP / KONSEP PORTFOLIO",
       heroTitle: '<span class="hero-line">POTONGAN</span><span class="hero-line accent">KEMAS.</span><span class="hero-line">GAYA PADU.</span>',
       heroCopy: "Lihat potongan dan suasana Jong Barbershop dalam konsep portfolio sinematik ini.",
-      heroContact: "Lihat Lokasi", heroShowcase: "Lihat Potongan",
+      heroContact: "DAPATKAN ARAH", heroShowcase: "Lihat Potongan",
       contactUnverified: "Demo sahaja · Lokasi dan hubungan belum disahkan",
       photoLabel: "FOTO JONG · KONSEP DEMO", scrollGallery: "Skrol ke galeri", scrollLabel: "TEROKAI",
       galleryEyebrow: "02 / HASIL POTONGAN",
@@ -47,17 +45,17 @@
       photoShort: "FOTO JONG",
       closingEyebrow: "04 / WALK-IN",
       closingTitle: "NAK GAYA BARU?<br><em>SINGGAH JONG.</em>",
-      closingCopy: "Jong menerima pelanggan walk-in. Lokasi tepat dan pautan arah masih perlu disahkan sebelum digunakan.",
-      closingButton: "Lihat Maklumat", demoTag: "DEMO",
+      closingCopy: "Walk-in dialu-alukan. Cari Jong di Taman Puchong Prima atau hubungi melalui WhatsApp untuk pertanyaan.",
+      closingButton: "DAPATKAN ARAH", demoTag: "DEMO",
       contactStateTitle: "Lokasi belum disahkan",
       contactStateCopy: "Butang ini ialah demo sahaja. Pautan arah dan nombor telefon akan diaktifkan setelah disahkan oleh pemilik.",
-      footerNotice: "Foto Jong dikongsi untuk konsep portfolio. Bukan laman rasmi; maklumat hubungan belum disahkan.",
+      footerNotice: "Konsep portfolio tidak rasmi, bukan laman web yang dikendalikan oleh Jong Barbershop.",
       galleryCard5: "FOTO 05",
       galleryCard6: "FOTO 06",
       altGallery5: "Foto potongan rambut Jong 5",
       altGallery6: "Foto potongan rambut Jong 6",
       floatingLabel: "DAPATKAN ARAH",
-      floatingAria: "Dapatkan arah — demo sahaja, lokasi belum disahkan",
+      floatingAria: "Dapatkan arah ke Jong Barbershop melalui Google Maps",
       viewerLabel: "Lihat foto potongan Jong",
       viewerClose: "Tutup gambar",
       openGallery1: "Besarkan foto potongan 1",
@@ -66,22 +64,26 @@
       openGallery4: "Besarkan foto potongan 4",
       openGallery5: "Besarkan foto potongan 5",
       openGallery6: "Besarkan foto potongan 6",
+      whatsappTextLink: "Tanya melalui WhatsApp ↗",
+      whatsappButton: "WHATSAPP JONG",
+      whatsappLabel: "WhatsApp Jong:",
+      whatsappMessage: "Hai Jong Barbershop, saya nak tanya tentang potong rambut.",
       backTopLink: "KE ATAS", languageAnnouncement: "Bahasa Melayu dipilih",
       title: "Jong Barbershop — Konsep Portfolio",
-      description: "Konsep portfolio tidak rasmi Jong Barbershop, memaparkan foto potongan dan suasana kedai. Lokasi dan hubungan belum disahkan.",
-      openGraphDescription: "Demo portfolio Jong menggunakan foto yang dikongsi; maklumat lokasi dan hubungan belum disahkan."
+      description: "Konsep portfolio tidak rasmi Jong Barbershop: hasil potongan, suasana kedai, WhatsApp dan lokasi.",
+      openGraphDescription: "Konsep portfolio Jong Barbershop menggunakan foto yang dibekalkan, serta pautan WhatsApp dan Google Maps."
     },
     en: {
       demo: "Portfolio demo concept · Not the official Jong Barbershop website",
       backTop: "Jong Barbershop — back to top",
       navLabel: "Main navigation", mobileNavLabel: "Mobile navigation", menuDialog: "Navigation menu",
       langLabel: "Website language", menuOpen: "Open menu", menuClose: "Close menu", menuButton: "Menu",
-      navHome: "Home", navGallery: "Haircut Gallery", navAbout: "About Jong", navContact: "Location",
+      navHome: "Home", navGallery: "Haircut Gallery", navAbout: "About Jong", navContact: "Location & Contact",
       menuCaption: "Jong Barbershop · Portfolio concept",
       heroEyebrow: "JONG BARBERSHOP / PORTFOLIO CONCEPT",
       heroTitle: '<span class="hero-line">SHARP CUTS.</span><span class="hero-line accent">FRESH STYLE.</span>',
       heroCopy: "Explore Jong Barbershop's haircuts and atmosphere in this cinematic portfolio concept.",
-      heroContact: "View Location", heroShowcase: "View Haircuts",
+      heroContact: "GET DIRECTIONS", heroShowcase: "View Haircuts",
       contactUnverified: "Demo only · Location and contact details are unverified",
       photoLabel: "JONG PHOTO · DEMO CONCEPT", scrollGallery: "Scroll to gallery", scrollLabel: "EXPLORE",
       galleryEyebrow: "02 / HAIRCUT GALLERY",
@@ -106,17 +108,17 @@
       photoShort: "JONG PHOTO",
       closingEyebrow: "04 / WALK-IN",
       closingTitle: "READY FOR A NEW LOOK?<br><em>VISIT JONG.</em>",
-      closingCopy: "Jong welcomes walk-in customers. The exact location and directions link must be verified before activation.",
-      closingButton: "View Details", demoTag: "DEMO",
+      closingCopy: "Walk-ins are welcome. Find Jong in Taman Puchong Prima or contact the shop on WhatsApp with enquiries.",
+      closingButton: "GET DIRECTIONS", demoTag: "DEMO",
       contactStateTitle: "Location not yet verified",
       contactStateCopy: "This is a demo button. Directions and phone links will be activated only after owner confirmation.",
-      footerNotice: "Jong photos shared for this portfolio concept. Not an official website; contact details are not verified.",
+      footerNotice: "Unofficial portfolio concept; not a website operated by Jong Barbershop.",
       galleryCard5: "PHOTO 05",
       galleryCard6: "PHOTO 06",
       altGallery5: "Jong haircut photo 5",
       altGallery6: "Jong haircut photo 6",
       floatingLabel: "GET DIRECTIONS",
-      floatingAria: "Get directions — demo only; location not verified",
+      floatingAria: "Get directions to Jong Barbershop on Google Maps",
       viewerLabel: "View Jong haircut photos",
       viewerClose: "Close photo",
       openGallery1: "Enlarge haircut photo 1",
@@ -125,10 +127,14 @@
       openGallery4: "Enlarge haircut photo 4",
       openGallery5: "Enlarge haircut photo 5",
       openGallery6: "Enlarge haircut photo 6",
+      whatsappTextLink: "Ask on WhatsApp ↗",
+      whatsappButton: "WHATSAPP JONG",
+      whatsappLabel: "Jong WhatsApp:",
+      whatsappMessage: "Hi Jong Barbershop, I'd like to ask about a haircut.",
       backTopLink: "BACK TO TOP", languageAnnouncement: "English selected",
       title: "Jong Barbershop — Portfolio Concept",
-      description: "Unofficial Jong Barbershop portfolio concept with haircut and shop photographs. Directions and contact details are unverified.",
-      openGraphDescription: "Jong portfolio demo with shared photos. Location and contact information are not yet verified."
+      description: "Unofficial Jong Barbershop portfolio concept showcasing haircut photos, the shop, WhatsApp and location.",
+      openGraphDescription: "Jong Barbershop portfolio concept with supplied photos, WhatsApp and Google Maps links."
     }
   };
 
@@ -189,6 +195,17 @@
     if (og) og.content = t.openGraphDescription;
     if (ogTitle) ogTitle.content = t.title;
     if (menuToggle) menuToggle.setAttribute("aria-label", t[menuOpen ? "menuClose" : "menuOpen"]);
+    const whatsappHref = "https://wa.me/" + CONTACT.whatsapp + "?text=" + encodeURIComponent(t.whatsappMessage);
+    document.querySelectorAll("[data-whatsapp-link]").forEach(link => {
+      link.href = whatsappHref;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
+    document.querySelectorAll("[data-directions-link]").forEach(link => {
+      link.href = CONTACT.directions;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
     if (status && announce) status.textContent = t.languageAnnouncement;
     if (document.getElementById("photoDialog")?.open) updateViewer(viewerIndex);
   }
@@ -364,16 +381,7 @@
   }
   window.addEventListener("scroll", scheduleFloating, {passive:true});
   window.addEventListener("resize", scheduleFloating, {passive:true});
-  floatingDirections?.addEventListener("click", event => {
-    // No invented map pin or unverified outbound URL. Reveal a clear demo disclosure.
-    if (!CONTACT.verified || !CONTACT.directions) {
-      event.preventDefault();
-      const disclosure = document.getElementById("contactDetails");
-      if (disclosure) disclosure.open = true;
-      closingSection?.scrollIntoView({behavior: reduceMotion.matches ? "auto" : "smooth",block:"start"});
-      scheduleFloating();
-    }
-  });
+  // Directions CTA now opens the user-provided, verified Google Maps place link.
   scheduleFloating();
 
   // Motion added only after an observer has been successfully created.
@@ -400,10 +408,5 @@
     if (e.matches) root.classList.remove("motion-ready");
   });
 
-  // An outgoing map URL is activated only after owner verification.
-  if (CONTACT.verified && /^https:\/\//.test(CONTACT.directions || "")) {
-    const link = document.getElementById("floatingDirections");
-    if (link) { link.href = CONTACT.directions; link.target = "_blank"; link.rel = "noopener noreferrer"; }
-  }
   translate(language);
 })();
