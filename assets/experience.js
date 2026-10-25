@@ -207,6 +207,7 @@
       link.rel = "noopener noreferrer";
     });
     if (status && announce) status.textContent = t.languageAnnouncement;
+    document.querySelectorAll(".language-button").forEach(button => { button.disabled = false; });
     if (document.getElementById("photoDialog")?.open) updateViewer(viewerIndex);
   }
 
@@ -231,6 +232,7 @@
     mobileMenu.inert = true;
     menuToggle.setAttribute("aria-label", translations[language].menuOpen);
     if (restoreFocus) menuToggle.focus();
+    scheduleFloating();
   }
   function openMenu() {
     if (menuOpen) return;
@@ -241,6 +243,7 @@
     menuToggle.setAttribute("aria-expanded", "true");
     menuToggle.setAttribute("aria-label", translations[language].menuClose);
     if (menuLinks[0]) menuLinks[0].focus();
+    scheduleFloating();
   }
   if (menuToggle && mobileMenu) {
     menuToggle.addEventListener("click", () => menuOpen ? closeMenu() : openMenu());
