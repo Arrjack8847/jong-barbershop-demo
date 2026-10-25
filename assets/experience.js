@@ -71,7 +71,7 @@
       contactUnverified: "Demo only · Contact details not yet verified",
       photoLabel: "Illustrative photo · Not the actual shop", scrollGallery: "Scroll to gallery", scrollLabel: "EXPLORE",
       galleryEyebrow: "02 / INSPIRATION GALLERY",
-      galleryTitle: 'HAIRCUT<br><em>INSPIRATION.</em>',
+      galleryTitle: 'HAIRCUT<br><em>IDEAS.</em>',
       galleryCopy: "Reference photography to demonstrate the site's visual direction. These are not photos of Jong Barbershop's work.",
       galleryHint: "SWIPE TO EXPLORE", galleryAria: "Haircut inspiration gallery",
       galleryPrev: "Previous image", galleryNext: "Next image",
@@ -198,7 +198,8 @@
   }
   if (menuToggle && mobileMenu) {
     menuToggle.addEventListener("click", () => menuOpen ? closeMenu() : openMenu());
-    menuLinks.forEach(link => link.addEventListener("click", () => closeMenu(false)));
+    mobileMenu.querySelector(".menu-backdrop")?.addEventListener("click", () => closeMenu());
+    menuLinks.forEach(link => link.addEventListener("click", () => closeMenu(true)));
     document.addEventListener("keydown", event => {
       if (!menuOpen) return;
       if (event.key === "Escape") {

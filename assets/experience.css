@@ -310,3 +310,9 @@ body.menu-open { overflow:hidden; }
   }
   .brand-logo {animation:brandEnter .55s cubic-bezier(.16,1,.3,1) both;}
 }
+
+/* Keep long bilingual editorial headings inside narrow screens. */
+@media(max-width:640px) {
+  .experience-heading .section-title { font-size:clamp(3.35rem,12vw,5.7rem); }
+  .section-title,.closing-title { overflow-wrap:anywhere; }
+}

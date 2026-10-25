@@ -10,6 +10,7 @@ PowerShell:
 ```powershell
 git clone https://github.com/Arrjack8847/jong-barbershop-demo.git
 cd jong-barbershop-demo
+git switch feat/cinematic-four-section-demo-20261025
 Start-Process .\index.html
 ```
 
@@ -42,3 +43,10 @@ Before official deployment: obtain owner approval, licensed original photos, ver
 
 ## Demo constraints
 No fabricated prices, hours, services, reviews, customer counts, credentials, history, booking system or official affiliation.
+
+## Review / testing checklist
+
+- Tested in a JavaScript DOM simulation: BM → EN → BM translation, preference persistence, translated menu labels, opening/closing the modal, Escape and focus return, gallery arrows and position indicator.
+- Static inspections: precisely four main sections, no unverified contact destination or phone/address retained, all bilingual keys present, JavaScript syntax valid.
+- **Visual browser testing is still needed on your PC**: use Chromium device toolbar at **320, 375, 390, 430, 768, 1024, and 1440px**, check horizontal overflow, heading wrapping, image crop, tap targets, focus trapping, scrolling, image load status, JavaScript console and reduced-motion rendering. None of these browser viewport checks is claimed complete.
+- If an image provider is unavailable offline or blocks traffic, use replacement photos with appropriate rights and preserve the illustrative labels until Jong's approved originals are supplied.
