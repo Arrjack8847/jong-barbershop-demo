@@ -21,11 +21,11 @@ The HTML file is self-contained (CSS and JavaScript included). Google Fonts and 
 - Obtain the business owner's approval and confirm name, address and phone number.
 - Verify current pricing, offered services, hours and whether appointments are accepted.
 - Replace inspiration pictures with the shop's own licensed, approved photos.
-- Replace the sample wordmark with the owner's official branding if available.
+- The provided Jong Barbershop logo photo is used in the header, hero and footer. Request the original high-resolution or transparent logo from the owner before launching an official site.
 - Remove **demo** disclaimers only after authorization.
 
 ## Technical
 
-Static HTML + CSS + vanilla JavaScript. No Lovable, framework, API key, authentication, or backend.
+Static HTML + CSS + vanilla JavaScript. The branding now uses a small optimized version of the supplied logo photo at `assets/jong-barbershop-logo.jpg`. No Lovable, framework, API key, authentication, or backend.
 
 Designed as a pitch demo for JackNex Studio, 2026.

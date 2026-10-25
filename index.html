@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#151512" />
+  <meta name="theme-color" content="#10131c" />
   <meta name="description" content="Konsep laman web untuk Jong Barbershop Puchong. Lihat inspirasi gaya rambut, lokasi kedai dan hubungi melalui WhatsApp." />
   <title>Jong Barbershop Puchong — Konsep Laman Web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -180,6 +180,48 @@
       .mobile-cta strong { display:block; color:var(--cream); font-size:14px; }
       .mobile-cta .btn { min-height:42px; padding:10px 17px; font-size:12px; }
     }
+  
+    /* Brand refresh: colors and real supplied shop logo. */
+    :root {
+      --ink:#10131c;
+      --surface:#171e2b;
+      --surface2:#202a3b;
+      --cream:#f8f8f5;
+      --muted:#adb9c9;
+      --copper:#f15c52;
+      --line:rgba(248,248,245,.15);
+    }
+    body { background:var(--ink); }
+    .demo-strip { background:#284fc0; color:#fff; }
+    .site-header { background:rgba(16,19,28,.97); }
+    .brand-logo { display:block; width:56px; height:56px; flex:none; border-radius:50%; object-fit:cover; border:1px solid rgba(248,248,245,.3); background:#080e18; }
+    .nav { height:88px; }
+    .hero-image-wrap { background:linear-gradient(140deg,#25344a,#111722); }
+    .hero-image-wrap::after { background:linear-gradient(90deg,#10131c 0%,rgba(16,19,28,.56) 30%,rgba(16,19,28,.08) 80%),linear-gradient(0deg,rgba(16,19,28,.42),transparent 32%); }
+    .hero-seal { position:absolute; width:168px; height:168px; right:66px; bottom:40px; z-index:3; border-radius:50%; object-fit:cover; border:2px solid rgba(248,248,245,.57); box-shadow:0 15px 35px rgba(0,0,0,.35); background:#080e18; }
+    .ticker { background:#284fc0; color:#fff; }
+    .styles { background:#151d2b; }
+    .style-card { background:#202a3c; }
+    .services { background:#1b2434; }
+    .contact-band { background:#eb544a; color:#fff; }
+    .contact-band .eyebrow { color:#fff; }
+    .contact-band .btn { background:#10131c; color:#fff; }
+    .contact-band .btn:hover { background:#263955; }
+    .map-panel { background:repeating-linear-gradient(0deg,transparent 0 42px,rgba(255,255,255,.055) 43px 44px),repeating-linear-gradient(90deg,transparent 0 42px,rgba(255,255,255,.055) 43px 44px),#1f2b3e; }
+    .map-panel::before,.map-panel::after { border-color:rgba(241,92,82,.35); }
+    .map-panel::after { background:rgba(40,79,192,.13); }
+    @media(max-width:950px) {
+      .hero-seal { width:132px; height:132px; right:50px; bottom:45px; }
+    }
+    @media(max-width:640px) {
+      .nav { height:68px; }
+      .brand-logo { width:44px; height:44px; }
+      .nav-links { background:#151d2b; }
+      .hero-image-wrap::after { background:linear-gradient(0deg,#10131c 0%,rgba(16,19,28,.78) 23%,rgba(16,19,28,.09) 80%),linear-gradient(90deg,rgba(16,19,28,.58),transparent 70%); }
+      .hero-seal { width:108px; height:108px; right:27px; bottom:102px; }
+      .mobile-cta { background:rgba(16,19,28,.97); }
+    }
+
   </style>
 </head>
 <body>
@@ -187,7 +229,7 @@
   <header class="site-header">
     <nav class="container nav" aria-label="Navigasi utama">
       <a class="brand" href="#home" aria-label="Jong Barbershop - ke atas">
-        <span class="brand-mark" aria-hidden="true">J</span>
+        <img class="brand-logo" src="assets/jong-barbershop-logo.jpg" width="56" height="56" alt="" />
         <span class="brand-name">JONG<small>BARBERSHOP</small></span>
       </a>
       <div class="nav-links" id="navLinks">
@@ -205,7 +247,7 @@
       <div class="container hero-layout">
         <div class="hero-image-wrap">
           <img class="hero-image" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1300&q=85" alt="Gambar inspirasi suasana kedai gunting rambut, bukan Jong Barbershop" fetchpriority="high" />
-          <span class="vertical-label">PUCHONG PRIMA · SELANGOR</span>
+          <img class="hero-seal" src="assets/jong-barbershop-logo.jpg" width="168" height="168" alt="Logo Jong Barbershop" /><span class="vertical-label">PUCHONG PRIMA · SELANGOR</span>
         </div>
         <div class="hero-copy">
           <div class="eyebrow hero-tag">Jong Barbershop · Puchong Prima</div>
@@ -263,7 +305,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">J</span><span class="brand-name">JONG<small>BARBERSHOP</small></span></a><div><p>© 2026 · Konsep demo portfolio. Bukan laman web rasmi Jong Barbershop dan tidak disahkan oleh pemilik.</p><p>Gambar ialah bahan rujukan/inspirasi. Maklumat perniagaan daripada direktori awam dan perlu disahkan sebelum diterbitkan sebagai laman rasmi.</p></div></div></footer>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><img class="brand-logo" src="assets/jong-barbershop-logo.jpg" width="56" height="56" alt="" /><span class="brand-name">JONG<small>BARBERSHOP</small></span></a><div><p>© 2026 · Konsep demo portfolio. Bukan laman web rasmi Jong Barbershop dan tidak disahkan oleh pemilik.</p><p>Gambar ialah bahan rujukan/inspirasi. Maklumat perniagaan daripada direktori awam dan perlu disahkan sebelum diterbitkan sebagai laman rasmi.</p></div></div></footer>
   <div class="mobile-cta"><span><strong>Jong Barbershop</strong> Puchong Prima</span><a class="btn btn-primary" href="https://wa.me/60189854070?text=Hai%20Jong%20Barbershop%2C%20saya%20nak%20tanya%20tentang%20potong%20rambut." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div>
   <script>
     const menuButton = document.getElementById('menuButton');
