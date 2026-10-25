@@ -223,6 +223,7 @@
     }
 
   </style>
+  <link rel="stylesheet" href="assets/experience.css" />
 </head>
 <body>
   <div class="demo-strip">Konsep demo untuk portfolio · Bukan laman rasmi Jong Barbershop</div>
@@ -238,6 +239,11 @@
         <a href="#perkhidmatan">Potong Rambut</a>
         <a href="#lokasi">Lokasi</a>
       </div>
+      <div class="language-switch" role="group" aria-label="Bahasa laman web">
+        <button class="lang-button" type="button" data-lang="bm" aria-pressed="true" lang="ms" aria-label="Bahasa Melayu">BM</button>
+        <button class="lang-button" type="button" data-lang="en" aria-pressed="false" lang="en" aria-label="English">EN</button>
+      </div>
+      <span class="visually-hidden" id="languageAnnounce" role="status" aria-live="polite"></span>
       <a class="btn btn-primary" href="https://wa.me/60189854070?text=Hai%20Jong%20Barbershop%2C%20saya%20nak%20tanya%20tentang%20potong%20rambut." target="_blank" rel="noopener noreferrer">Tanya di WhatsApp <span class="arrow" aria-hidden="true">↗</span></a>
       <button class="menu-button" id="menuButton" type="button" aria-label="Buka menu" aria-controls="navLinks" aria-expanded="false">☰</button>
     </nav>
@@ -267,14 +273,14 @@
     <section class="section styles" id="gaya">
       <div class="container">
         <div class="section-head">
-          <div><div class="eyebrow">01 / Pilihan Gaya</div><h2 class="display section-title">FIND YOUR<br>LOOK<span style="color:var(--copper)">.</span></h2></div>
+          <div><div class="eyebrow">01 / Pilihan Gaya</div><h2 class="display section-title">CARI GAYA<br>ANDA<span style="color:var(--copper)">.</span></h2></div>
           <p>Tak pasti nak potong macam mana? Simpan gambar inspirasi dan tunjukkan kepada barber untuk bincang gaya yang anda suka.</p>
         </div>
         <div class="styles-grid">
-          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi potongan rambut pendek" loading="lazy"/></div><div class="style-details"><h3>Short Cut</h3><span>01 ↗</span></div></article>
-          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi gaya rambut kemas" loading="lazy"/></div><div class="style-details"><h3>Clean Look</h3><span>02 ↗</span></div></article>
-          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi potongan rambut lelaki" loading="lazy"/></div><div class="style-details"><h3>Modern Style</h3><span>03 ↗</span></div></article>
-          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1593702295094-aea22597af65?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi gaya rambut klasik" loading="lazy"/></div><div class="style-details"><h3>Classic Cut</h3><span>04 ↗</span></div></article>
+          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi potongan rambut pendek" loading="lazy"/></div><div class="style-details"><h3>Potongan Pendek</h3><span>01 ↗</span></div></article>
+          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi gaya rambut kemas" loading="lazy"/></div><div class="style-details"><h3>Gaya Kemas</h3><span>02 ↗</span></div></article>
+          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi potongan rambut lelaki" loading="lazy"/></div><div class="style-details"><h3>Gaya Moden</h3><span>03 ↗</span></div></article>
+          <article class="style-card"><div class="style-photo"><img src="https://images.unsplash.com/photo-1593702295094-aea22597af65?auto=format&fit=crop&w=700&q=80" alt="Foto inspirasi gaya rambut klasik" loading="lazy"/></div><div class="style-details"><h3>Gaya Klasik</h3><span>04 ↗</span></div></article>
         </div>
         <p class="disclaimer">* Semua gambar ialah ilustrasi/inspirasi umum, bukan hasil kerja sebenar atau gambar premis Jong Barbershop. Gaya yang tersedia perlu disahkan dengan kedai.</p>
       </div>
@@ -282,12 +288,12 @@
     <section class="section" id="tentang">
       <div class="container about-grid">
         <div class="about-visual"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=80" alt="Gambar ilustrasi kedai gunting rambut" loading="lazy"/><span class="photo-note">Gambar Ilustrasi Sahaja</span></div>
-        <div class="about-text"><div class="number">02.</div><div class="eyebrow">Gaya Anda, Pilihan Anda</div><h2 class="display">KEEP IT<br><span style="color:var(--copper)">YOUR WAY.</span></h2><p>Daripada potongan ringkas hingga inspirasi gaya baharu, semuanya bermula dengan apa yang anda inginkan. Bawa gambar rujukan dan bincang pilihan yang sesuai sebelum potong rambut.</p><a class="btn btn-outline" href="#lokasi">Cari Kami di Puchong <span class="arrow" aria-hidden="true">↘</span></a></div>
+        <div class="about-text"><div class="number">02.</div><div class="eyebrow">Gaya Anda, Pilihan Anda</div><h2 class="display">GAYA ANDA.<br><span style="color:var(--copper)">CARA ANDA.</span></h2><p>Daripada potongan ringkas hingga inspirasi gaya baharu, semuanya bermula dengan apa yang anda inginkan. Bawa gambar rujukan dan bincang pilihan yang sesuai sebelum potong rambut.</p><a class="btn btn-outline" href="#lokasi">Cari Kami di Puchong <span class="arrow" aria-hidden="true">↘</span></a></div>
       </div>
     </section>
     <section class="section services" id="perkhidmatan">
       <div class="container">
-        <div class="section-head"><div><div class="eyebrow">03 / Sebelum Singgah</div><h2 class="display section-title">CUT &<br>CONNECT<span style="color:var(--copper)">.</span></h2></div><p>Maklumat asas untuk membantu anda merancang kunjungan. Sahkan jenis potongan, harga dan waktu operasi terus dengan kedai.</p></div>
+        <div class="section-head"><div><div class="eyebrow">03 / Sebelum Singgah</div><h2 class="display section-title">SEMAK<br>DULU<span style="color:var(--copper)">.</span></h2></div><p>Maklumat asas untuk membantu anda merancang kunjungan. Sahkan jenis potongan, harga dan waktu operasi terus dengan kedai.</p></div>
         <div class="service-list">
           <div class="service-row"><span class="id">01 /</span><h3>Potong Rambut</h3><p>Hubungi kedai untuk bertanya tentang jenis potongan rambut yang tersedia.</p></div>
           <div class="service-row"><span class="id">02 /</span><h3>Rujukan Gaya</h3><p>Bawa gambar gaya yang anda suka dan semak dengan barber sebelum memulakan potongan.</p></div>
@@ -300,29 +306,13 @@
     </section>
     <section class="section location" id="lokasi">
       <div class="container location-grid">
-        <div><div class="eyebrow">04 / Cari Kami</div><h2 class="display section-title">YOUR NEXT<br><span style="color:var(--copper)">STOP.</span></h2><div class="address-label">ALAMAT KEDAI</div><address>No 24, 25, Jalan Prima Utama 5/6,<br>Taman Puchong Prima,<br>47100 Puchong, Selangor.</address><p class="location-note">Hubungi dahulu untuk mengesahkan waktu operasi, harga dan ketersediaan.</p><div class="button-row"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Jong%20Barbershop%20Puchong%20Taman%20Puchong%20Prima" target="_blank" rel="noopener noreferrer">Buka Google Maps <span class="arrow" aria-hidden="true">↗</span></a><a class="btn btn-outline" href="tel:+60189854070">Telefon Kedai <span class="arrow" aria-hidden="true">↗</span></a></div></div>
+        <div><div class="eyebrow">04 / Cari Kami</div><h2 class="display section-title">LOKASI<br><span style="color:var(--copper)">KAMI.</span></h2><div class="address-label">ALAMAT KEDAI</div><address>No 24, 25, Jalan Prima Utama 5/6,<br>Taman Puchong Prima,<br>47100 Puchong, Selangor.</address><p class="location-note">Hubungi dahulu untuk mengesahkan waktu operasi, harga dan ketersediaan.</p><div class="button-row"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Jong%20Barbershop%20Puchong%20Taman%20Puchong%20Prima" target="_blank" rel="noopener noreferrer">Buka Google Maps <span class="arrow" aria-hidden="true">↗</span></a><a class="btn btn-outline" href="tel:+60189854070">Telefon Kedai <span class="arrow" aria-hidden="true">↗</span></a></div></div>
         <div class="map-panel" role="img" aria-label="Ilustrasi lokasi; gunakan butang Google Maps untuk arah sebenar"><div class="map-content"><div class="map-pin" aria-hidden="true">⌖</div><strong>JONG BARBERSHOP</strong><small>TAMAN PUCHONG PRIMA · 47100 PUCHONG</small></div></div>
       </div>
     </section>
   </main>
   <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><img class="brand-logo" src="assets/jong-barbershop-logo.jpg" width="56" height="56" alt="" /><span class="brand-name">JONG<small>BARBERSHOP</small></span></a><div><p>© 2026 · Konsep demo portfolio. Bukan laman web rasmi Jong Barbershop dan tidak disahkan oleh pemilik.</p><p>Gambar ialah bahan rujukan/inspirasi. Maklumat perniagaan daripada direktori awam dan perlu disahkan sebelum diterbitkan sebagai laman rasmi.</p></div></div></footer>
   <div class="mobile-cta"><span><strong>Jong Barbershop</strong> Puchong Prima</span><a class="btn btn-primary" href="https://wa.me/60189854070?text=Hai%20Jong%20Barbershop%2C%20saya%20nak%20tanya%20tentang%20potong%20rambut." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div>
-  <script>
-    const menuButton = document.getElementById('menuButton');
-    const navLinks = document.getElementById('navLinks');
-    menuButton.addEventListener('click', () => {
-      const expanded = menuButton.getAttribute('aria-expanded') === 'true';
-      menuButton.setAttribute('aria-expanded', String(!expanded));
-      menuButton.setAttribute('aria-label', expanded ? 'Buka menu' : 'Tutup menu');
-      menuButton.textContent = expanded ? '☰' : '×';
-      navLinks.classList.toggle('open', !expanded);
-    });
-    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.setAttribute('aria-label', 'Buka menu');
-      menuButton.textContent = '☰';
-    }));
-  </script>
+  <script src="assets/experience.js" defer></script>
 </body>
 </html>
