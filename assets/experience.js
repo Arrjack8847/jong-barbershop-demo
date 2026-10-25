@@ -17,90 +17,118 @@
       backTop: "Jong Barbershop — ke utama",
       navLabel: "Navigasi utama", mobileNavLabel: "Navigasi telefon", menuDialog: "Menu navigasi",
       langLabel: "Bahasa laman web", menuOpen: "Buka menu", menuClose: "Tutup menu", menuButton: "Menu",
-      navHome: "Utama", navGallery: "Inspirasi Potongan", navAbout: "Tentang Jong", navContact: "Hubungi",
+      navHome: "Utama", navGallery: "Hasil Potongan", navAbout: "Tentang Jong", navContact: "Lokasi",
       menuCaption: "Jong Barbershop · Konsep portfolio",
       heroEyebrow: "JONG BARBERSHOP / KONSEP PORTFOLIO",
       heroTitle: '<span class="hero-line">POTONGAN</span><span class="hero-line accent">KEMAS.</span><span class="hero-line">GAYA PADU.</span>',
-      heroCopy: "Inspirasi potongan yang berani. Gaya anda, pilihan anda. Terokai konsep laman Jong Barbershop.",
-      heroContact: "Hubungi Jong", heroShowcase: "Lihat Hasil",
-      contactUnverified: "Demo sahaja · Maklumat hubungan belum disahkan",
-      photoLabel: "Foto ilustrasi · Bukan premis sebenar", scrollGallery: "Skrol ke galeri", scrollLabel: "TEROKAI",
-      galleryEyebrow: "02 / GALERI INSPIRASI",
-      galleryTitle: 'INSPIRASI<br><em>POTONGAN.</em>',
-      galleryCopy: "Pilihan foto rujukan untuk memperlihatkan arah visual demo. Ini bukan hasil kerja sebenar Jong Barbershop.",
-      galleryHint: "LERET UNTUK LIHAT LAGI", galleryAria: "Galeri foto inspirasi",
+      heroCopy: "Lihat potongan dan suasana Jong Barbershop dalam konsep portfolio sinematik ini.",
+      heroContact: "Lihat Lokasi", heroShowcase: "Lihat Potongan",
+      contactUnverified: "Demo sahaja · Lokasi dan hubungan belum disahkan",
+      photoLabel: "FOTO JONG · KONSEP DEMO", scrollGallery: "Skrol ke galeri", scrollLabel: "TEROKAI",
+      galleryEyebrow: "02 / HASIL POTONGAN",
+      galleryTitle: "HASIL<br><em>POTONGAN.</em>",
+      galleryCopy: "Pilihan foto potongan Jong yang dikongsi untuk konsep portfolio ini.",
+      galleryHint: "LERET UNTUK LIHAT LAGI", galleryAria: "Galeri foto potongan Jong",
       galleryPrev: "Gambar sebelumnya", galleryNext: "Gambar seterusnya",
-      galleryCard1: "RUJUKAN 01", galleryCard2: "RUJUKAN 02", galleryCard3: "RUJUKAN 03", galleryCard4: "RUJUKAN 04",
-      imageMark: "INSPIRASI / DEMO",
-      altGallery1: "Foto ilustrasi inspirasi potongan rambut pertama, bukan kerja Jong",
-      altGallery2: "Foto ilustrasi inspirasi potongan rambut kedua, bukan kerja Jong",
-      altGallery3: "Foto ilustrasi inspirasi potongan rambut ketiga, bukan kerja Jong",
-      altGallery4: "Foto ilustrasi inspirasi potongan rambut keempat, bukan kerja Jong",
-      galleryDisclosure: "* Semua imej galeri ialah foto ilustrasi. Kami belum menerima foto potongan sebenar Jong Barbershop yang diluluskan untuk kegunaan laman web.",
-      experienceEyebrow: "03 / TENTANG KONSEP",
+      galleryCard1: "FOTO 01", galleryCard2: "FOTO 02", galleryCard3: "FOTO 03", galleryCard4: "FOTO 04",
+      imageMark: "FOTO JONG / DEMO",
+      altGallery1: "Foto potongan rambut Jong 1",
+      altGallery2: "Foto potongan rambut Jong 2",
+      altGallery3: "Foto potongan rambut Jong 3",
+      altGallery4: "Foto potongan rambut Jong 4",
+      galleryDisclosure: "* Foto daripada bahan yang dikongsi untuk konsep demo. Penerbitan rasmi memerlukan kelulusan pemilik dan kebenaran penggunaan imej.",
+      experienceEyebrow: "03 / SUASANA JONG",
       experienceTitle: 'KENALI JONG<br><em>BARBERSHOP.</em>',
       experienceSubhead: "SATU KEDAI.<br>PELBAGAI GAYA.",
-      experienceCopy: "Demo ini mengambil inspirasi daripada identiti logo Jong. Foto suasana masih sekadar gambaran visual dan akan digantikan dengan gambar sebenar selepas mendapat kebenaran pemilik.",
-      experienceCaption: "Ruang untuk foto sebenar kedai, barber dan suasana Jong pada versi seterusnya.",
-      experienceMainAlt: "Gambar suasana kedai rambut sebagai ilustrasi, bukan premis Jong",
-      experienceSmallAlt: "Gambar peralatan gunting rambut sebagai ilustrasi",
-      photoShort: "Ilustrasi",
-      closingEyebrow: "04 / BERHUBUNG",
-      closingTitle: "NAK GAYA BARU?<br><em>JOM HUBUNGI JONG.</em>",
-      closingCopy: "Laman ini ialah konsep demo. Saluran WhatsApp, alamat dan waktu operasi masih perlu disahkan oleh pemilik sebelum dipautkan.",
-      closingButton: "Hubungi Jong", demoTag: "DEMO",
-      contactStateTitle: "Maklumat hubungan belum disahkan",
-      contactStateCopy: "Butang ini ialah demonstrasi sahaja. Tiada nombor telefon, pautan WhatsApp atau lokasi yang belum disahkan digunakan.",
-      footerNotice: "Imej hanyalah ilustrasi. Tiada hubungan rasmi atau maklumat perniagaan yang telah disahkan.",
+      experienceCopy: "Lihat suasana Jong Barbershop melalui foto kedai dan barber yang dikongsi untuk konsep demo ini.",
+      experienceCaption: "Suasana kedai Jong dan identiti dinding merahnya.",
+      experienceMainAlt: "Foto suasana Jong Barbershop",
+      experienceSmallAlt: "Foto dalaman Jong Barbershop",
+      photoShort: "FOTO JONG",
+      closingEyebrow: "04 / WALK-IN",
+      closingTitle: "NAK GAYA BARU?<br><em>SINGGAH JONG.</em>",
+      closingCopy: "Jong menerima pelanggan walk-in. Lokasi tepat dan pautan arah masih perlu disahkan sebelum digunakan.",
+      closingButton: "Lihat Maklumat", demoTag: "DEMO",
+      contactStateTitle: "Lokasi belum disahkan",
+      contactStateCopy: "Butang ini ialah demo sahaja. Pautan arah dan nombor telefon akan diaktifkan setelah disahkan oleh pemilik.",
+      footerNotice: "Foto Jong dikongsi untuk konsep portfolio. Bukan laman rasmi; maklumat hubungan belum disahkan.",
+      galleryCard5: "FOTO 05",
+      galleryCard6: "FOTO 06",
+      altGallery5: "Foto potongan rambut Jong 5",
+      altGallery6: "Foto potongan rambut Jong 6",
+      floatingLabel: "DAPATKAN ARAH",
+      floatingAria: "Dapatkan arah — demo sahaja, lokasi belum disahkan",
+      viewerLabel: "Lihat foto potongan Jong",
+      viewerClose: "Tutup gambar",
+      openGallery1: "Besarkan foto potongan 1",
+      openGallery2: "Besarkan foto potongan 2",
+      openGallery3: "Besarkan foto potongan 3",
+      openGallery4: "Besarkan foto potongan 4",
+      openGallery5: "Besarkan foto potongan 5",
+      openGallery6: "Besarkan foto potongan 6",
       backTopLink: "KE ATAS", languageAnnouncement: "Bahasa Melayu dipilih",
       title: "Jong Barbershop — Konsep Portfolio",
-      description: "Konsep portfolio tidak rasmi untuk Jong Barbershop. Lihat inspirasi gaya rambut dan konsep pengalaman kedai. Maklumat perhubungan belum disahkan.",
-      openGraphDescription: "Konsep demo tidak rasmi. Gambar inspirasi dan maklumat hubungan belum disahkan."
+      description: "Konsep portfolio tidak rasmi Jong Barbershop, memaparkan foto potongan dan suasana kedai. Lokasi dan hubungan belum disahkan.",
+      openGraphDescription: "Demo portfolio Jong menggunakan foto yang dikongsi; maklumat lokasi dan hubungan belum disahkan."
     },
     en: {
       demo: "Portfolio demo concept · Not the official Jong Barbershop website",
       backTop: "Jong Barbershop — back to top",
       navLabel: "Main navigation", mobileNavLabel: "Mobile navigation", menuDialog: "Navigation menu",
       langLabel: "Website language", menuOpen: "Open menu", menuClose: "Close menu", menuButton: "Menu",
-      navHome: "Home", navGallery: "Haircut Inspiration", navAbout: "About Jong", navContact: "Contact",
+      navHome: "Home", navGallery: "Haircut Gallery", navAbout: "About Jong", navContact: "Location",
       menuCaption: "Jong Barbershop · Portfolio concept",
       heroEyebrow: "JONG BARBERSHOP / PORTFOLIO CONCEPT",
       heroTitle: '<span class="hero-line">SHARP CUTS.</span><span class="hero-line accent">FRESH STYLE.</span>',
-      heroCopy: "Bold haircut inspiration. Your look, your choice. Explore this concept website for Jong Barbershop.",
-      heroContact: "Contact Jong", heroShowcase: "View Styles",
-      contactUnverified: "Demo only · Contact details not yet verified",
-      photoLabel: "Illustrative photo · Not the actual shop", scrollGallery: "Scroll to gallery", scrollLabel: "EXPLORE",
-      galleryEyebrow: "02 / INSPIRATION GALLERY",
-      galleryTitle: 'HAIRCUT<br><em>IDEAS.</em>',
-      galleryCopy: "Reference photography to demonstrate the site's visual direction. These are not photos of Jong Barbershop's work.",
-      galleryHint: "SWIPE TO EXPLORE", galleryAria: "Haircut inspiration gallery",
+      heroCopy: "Explore Jong Barbershop's haircuts and atmosphere in this cinematic portfolio concept.",
+      heroContact: "View Location", heroShowcase: "View Haircuts",
+      contactUnverified: "Demo only · Location and contact details are unverified",
+      photoLabel: "JONG PHOTO · DEMO CONCEPT", scrollGallery: "Scroll to gallery", scrollLabel: "EXPLORE",
+      galleryEyebrow: "02 / HAIRCUT GALLERY",
+      galleryTitle: "HAIRCUT<br><em>GALLERY.</em>",
+      galleryCopy: "A selection of Jong haircut photographs shared for this portfolio concept.",
+      galleryHint: "SWIPE TO EXPLORE", galleryAria: "Jong haircut photo gallery",
       galleryPrev: "Previous image", galleryNext: "Next image",
-      galleryCard1: "REFERENCE 01", galleryCard2: "REFERENCE 02", galleryCard3: "REFERENCE 03", galleryCard4: "REFERENCE 04",
-      imageMark: "INSPIRATION / DEMO",
-      altGallery1: "Illustrative haircut inspiration photo one, not Jong's work",
-      altGallery2: "Illustrative haircut inspiration photo two, not Jong's work",
-      altGallery3: "Illustrative haircut inspiration photo three, not Jong's work",
-      altGallery4: "Illustrative haircut inspiration photo four, not Jong's work",
-      galleryDisclosure: "* All gallery images are illustrative reference photos. Approved photographs of Jong Barbershop's real haircuts have not yet been provided.",
-      experienceEyebrow: "03 / ABOUT THIS CONCEPT",
+      galleryCard1: "PHOTO 01", galleryCard2: "PHOTO 02", galleryCard3: "PHOTO 03", galleryCard4: "PHOTO 04",
+      imageMark: "JONG PHOTO / DEMO",
+      altGallery1: "Jong haircut photo 1",
+      altGallery2: "Jong haircut photo 2",
+      altGallery3: "Jong haircut photo 3",
+      altGallery4: "Jong haircut photo 4",
+      galleryDisclosure: "* Photos are supplied for this demo concept. Official publication requires owner approval and appropriate image-use permission.",
+      experienceEyebrow: "03 / INSIDE JONG",
       experienceTitle: 'GET TO KNOW<br><em>JONG BARBERSHOP.</em>',
       experienceSubhead: "ONE SHOP.<br>MANY LOOKS.",
-      experienceCopy: "This demo takes visual inspiration from Jong's existing logo. The atmosphere photographs are illustrative only and would be replaced with real approved images of the shop.",
-      experienceCaption: "Reserved for approved photos of Jong's actual premises, barbers and shop atmosphere.",
-      experienceMainAlt: "Illustrative hair salon atmosphere, not Jong's actual premises",
-      experienceSmallAlt: "Illustrative haircut tools photo",
-      photoShort: "Illustration",
-      closingEyebrow: "04 / GET IN TOUCH",
-      closingTitle: "READY FOR A NEW LOOK?<br><em>CONTACT JONG.</em>",
-      closingCopy: "This is a demo concept. WhatsApp, address and opening hours still need to be confirmed by the owner before links can be activated.",
-      closingButton: "Contact Jong", demoTag: "DEMO",
-      contactStateTitle: "Contact details are not yet verified",
-      contactStateCopy: "This button is a demonstration only. No unverified phone number, WhatsApp link or map destination is used.",
-      footerNotice: "Photography is illustrative. No official affiliation or verified business details are implied.",
+      experienceCopy: "A look at Jong Barbershop through shop and barber photos shared for this concept.",
+      experienceCaption: "Jong's shop atmosphere and distinctive red interior.",
+      experienceMainAlt: "Photo from Jong Barbershop",
+      experienceSmallAlt: "Jong Barbershop interior photo",
+      photoShort: "JONG PHOTO",
+      closingEyebrow: "04 / WALK-IN",
+      closingTitle: "READY FOR A NEW LOOK?<br><em>VISIT JONG.</em>",
+      closingCopy: "Jong welcomes walk-in customers. The exact location and directions link must be verified before activation.",
+      closingButton: "View Details", demoTag: "DEMO",
+      contactStateTitle: "Location not yet verified",
+      contactStateCopy: "This is a demo button. Directions and phone links will be activated only after owner confirmation.",
+      footerNotice: "Jong photos shared for this portfolio concept. Not an official website; contact details are not verified.",
+      galleryCard5: "PHOTO 05",
+      galleryCard6: "PHOTO 06",
+      altGallery5: "Jong haircut photo 5",
+      altGallery6: "Jong haircut photo 6",
+      floatingLabel: "GET DIRECTIONS",
+      floatingAria: "Get directions — demo only; location not verified",
+      viewerLabel: "View Jong haircut photos",
+      viewerClose: "Close photo",
+      openGallery1: "Enlarge haircut photo 1",
+      openGallery2: "Enlarge haircut photo 2",
+      openGallery3: "Enlarge haircut photo 3",
+      openGallery4: "Enlarge haircut photo 4",
+      openGallery5: "Enlarge haircut photo 5",
+      openGallery6: "Enlarge haircut photo 6",
       backTopLink: "BACK TO TOP", languageAnnouncement: "English selected",
       title: "Jong Barbershop — Portfolio Concept",
-      description: "Unofficial portfolio concept for Jong Barbershop. Explore haircut inspiration and a sample shop experience. Contact details are unverified.",
-      openGraphDescription: "Unofficial concept demo. Inspiration photos and unverified business contact details."
+      description: "Unofficial Jong Barbershop portfolio concept with haircut and shop photographs. Directions and contact details are unverified.",
+      openGraphDescription: "Jong portfolio demo with shared photos. Location and contact information are not yet verified."
     }
   };
 
@@ -162,6 +190,7 @@
     if (ogTitle) ogTitle.content = t.title;
     if (menuToggle) menuToggle.setAttribute("aria-label", t[menuOpen ? "menuClose" : "menuOpen"]);
     if (status && announce) status.textContent = t.languageAnnouncement;
+    if (document.getElementById("photoDialog")?.open) updateViewer(viewerIndex);
   }
 
   document.querySelectorAll(".language-button").forEach(button => {
@@ -269,6 +298,84 @@
     }, {passive:true});
   }
 
+
+  // Actual gallery images open in an accessible native dialog. No synthesized before/after images.
+  const photoDialog = document.getElementById("photoDialog");
+  const viewerImage = document.getElementById("viewerImage");
+  const viewerCaption = document.getElementById("viewerCaption");
+  const viewerCount = document.getElementById("viewerCount");
+  const viewerClose = document.getElementById("viewerClose");
+  const floatingDirections = document.getElementById("floatingDirections");
+  const closingSection = document.getElementById("hubungi");
+  const heroActions = document.querySelector(".hero-actions");
+  let viewerIndex = 0;
+  let lastGalleryTrigger = null;
+  let floatFrame = 0;
+
+  function updateViewer(index) {
+    if (!galleryCards.length || !viewerImage || !viewerCaption || !viewerCount) return;
+    viewerIndex = (index + galleryCards.length) % galleryCards.length;
+    const image = galleryCards[viewerIndex].querySelector("img");
+    if (!image) return;
+    viewerImage.src = image.currentSrc || image.src;
+    viewerImage.alt = image.alt;
+    viewerCaption.textContent = translations[language]["galleryCard" + (viewerIndex + 1)] || "";
+    viewerCount.textContent = String(viewerIndex+1).padStart(2,"0") + " / " + String(galleryCards.length).padStart(2,"0");
+  }
+  document.querySelectorAll("[data-gallery-open]").forEach(trigger => {
+    trigger.addEventListener("click", () => {
+      if (!photoDialog || typeof photoDialog.showModal !== "function") return;
+      lastGalleryTrigger = trigger;
+      updateViewer(Number(trigger.dataset.galleryOpen));
+      photoDialog.showModal();
+      document.body.classList.add("viewer-open");
+      viewerClose?.focus();
+      scheduleFloating();
+    });
+  });
+  viewerClose?.addEventListener("click", () => photoDialog?.close());
+  document.getElementById("viewerPrev")?.addEventListener("click", () => updateViewer(viewerIndex - 1));
+  document.getElementById("viewerNext")?.addEventListener("click", () => updateViewer(viewerIndex + 1));
+  photoDialog?.addEventListener("keydown", e => {
+    if (e.key==="ArrowLeft" || e.key==="ArrowRight") {
+      e.preventDefault(); updateViewer(viewerIndex + (e.key==="ArrowRight" ? 1 : -1));
+    }
+  });
+  photoDialog?.addEventListener("click", e => { if (e.target === photoDialog) photoDialog.close(); });
+  photoDialog?.addEventListener("close", () => {
+    document.body.classList.remove("viewer-open");
+    lastGalleryTrigger?.focus();
+    scheduleFloating();
+  });
+
+  // Sticky demo directions appears only after the main hero CTA and before final CTA.
+  function updateFloating() {
+    if (!floatingDirections || !heroActions || !closingSection) return;
+    const afterHero = heroActions.getBoundingClientRect().bottom < 0;
+    const finalReached = closingSection.getBoundingClientRect().top < window.innerHeight * .83;
+    const show = window.innerWidth < 768 && afterHero && !finalReached && !menuOpen && !(photoDialog && photoDialog.open);
+    floatingDirections.classList.toggle("is-visible", show);
+    floatingDirections.setAttribute("aria-hidden", String(!show));
+    floatingDirections.tabIndex = show ? 0 : -1;
+  }
+  function scheduleFloating() {
+    if (floatFrame) return;
+    floatFrame = window.requestAnimationFrame(() => {floatFrame = 0; updateFloating();});
+  }
+  window.addEventListener("scroll", scheduleFloating, {passive:true});
+  window.addEventListener("resize", scheduleFloating, {passive:true});
+  floatingDirections?.addEventListener("click", event => {
+    // No invented map pin or unverified outbound URL. Reveal a clear demo disclosure.
+    if (!CONTACT.verified || !CONTACT.directions) {
+      event.preventDefault();
+      const disclosure = document.getElementById("contactDetails");
+      if (disclosure) disclosure.open = true;
+      closingSection?.scrollIntoView({behavior: reduceMotion.matches ? "auto" : "smooth",block:"start"});
+      scheduleFloating();
+    }
+  });
+  scheduleFloating();
+
   // Motion added only after an observer has been successfully created.
   function activateReveals() {
     if (reduceMotion.matches || !("IntersectionObserver" in window)) return;
@@ -293,9 +400,10 @@
     if (e.matches) root.classList.remove("motion-ready");
   });
 
-  // Deliberately no unverified contact URLs. Preserve truthful demo-only UI.
-  if (CONTACT.verified) {
-    // Future verified integration may be added here after the owner approves it.
+  // An outgoing map URL is activated only after owner verification.
+  if (CONTACT.verified && /^https:\/\//.test(CONTACT.directions || "")) {
+    const link = document.getElementById("floatingDirections");
+    if (link) { link.href = CONTACT.directions; link.target = "_blank"; link.rel = "noopener noreferrer"; }
   }
   translate(language);
 })();

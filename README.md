@@ -1,52 +1,49 @@
-# Jong Barbershop — Cinematic Portfolio Concept
+# Jong Barbershop — Final Cinematic Portfolio Demo
 
-An **unofficial** mobile-first client-pitch concept for Jong Barbershop. Not commissioned, endorsed, or the official business website.
+Unofficial client-pitch demo, not Jong Barbershop's commissioned or official website.
 
-## Run locally
-Download or clone the repository, then open `index.html` in Chrome, Edge, Safari or Firefox. No npm, build, backend, auth or API keys.
-Keep `assets/` beside `index.html`. Example photos and Google Fonts require internet. CSS fallback surfaces still render offline.
+## Preview
+Open `index.html` in a modern browser. No npm, build tools, frameworks, servers or keys required. Google Fonts load only if online.
 
-PowerShell:
-```powershell
-git clone https://github.com/Arrjack8847/jong-barbershop-demo.git
-cd jong-barbershop-demo
-git switch feat/cinematic-four-section-demo-20261025
-Start-Process .\index.html
-```
+## Branch
+Developed from `feat/cinematic-four-section-demo-20261025` and brought together with the ten photos added to `main` in commit `ac9804ae`.
 
-## Four sections
-1. **Cinematic hero** — logo, BM/EN controls, photo (explicitly illustrative), staggered headline and two anchored CTAs.
-2. **Haircut inspiration** — labeled reference imagery, touch swipe and CSS scroll snapping on mobile, editorial desktop grid, keyboard arrows and index.
-3. **Shop experience concept** — atmospheric editorial images clearly labeled as placeholders, not Jong's real staff or interior.
-4. **Contact / closing CTA** — prominent demo-only contact disclosure and Jong-branded footer.
+## Sections
+1. **Cinematic hero** — authentic Jong haircut photo, staggered BM/EN headline, two CTAs and subtle light-reflection.
+2. **Haircut gallery** — six supplied photographs, swipe/scroll-snap on mobile, three-column desktop gallery and accessible tap-to-enlarge dialog with keyboard controls.
+3. **Jong shop experience** — supplied barber-at-work and interior images.
+4. **Walk-in / contact** — storefront photo treatment, clear demo contact disclosure and footer.
 
-On phones/tablets a full-screen menu provides Escape handling, focus trapping between visible menu controls, focus return, and scroll lock.
+## Mobile floating CTA
+- Red, 54px tall, maximum 360px wide and 16px minimum side margin.
+- Displays only after the hero CTA scrolls away and before the closing section; hidden while menu/viewer is open.
+- Diagonal specular shine approximately every 6 seconds with about a 0.9-second sweep; respects reduced motion.
+- **Not a live directions link**: the owner's exact maps destination is unverified. The button reveals a clearly labeled demo-only disclosure rather than sending users to a guessed map.
+- Exact verified location/telephone can be configured later through the central `CONTACT` object in `assets/experience.js`.
 
-## Implementation
-- `index.html`: four semantic sections; links are local anchors. No inline CSS or scripts.
-- `assets/experience.css`: theme tokens, mobile/desktop responsive rules, menu, image and reveal motion.
-- `assets/experience.js`: BM/EN translation dictionaries, persistence, menu logic, gallery position and scroll reveals.
-- `assets/jong-barbershop-logo.jpg`: existing supplied Jong logo image, retained without reworking artwork.
-- Vanilla HTML/CSS/JS only. No Lovable, frameworks, animation dependencies or booking/payment flow.
+## Media
+The files `photo_1_2026-10-25_12-19-41.jpg` through `photo_10_2026-10-25_12-19-41.jpg` are the ten photos supplied for this demo. Photos are used directly from the repository root. The current photo ordering assumes the files were uploaded in the same order as the supplied set; **visually verify crops and placement** before client presentation.
+- Hero: photo_8
+- Gallery: photos_3, _4, _6, _7, _9, _10
+- Shop/barber: photos_1 and _2
+- Walk-in closing backdrop: photo_5
+- Existing logo: `assets/jong-barbershop-logo.jpg`
 
-## Accessibility / performance
-- Language defaults to BM; EN is fully translated including labels and metadata. Preference persists when storage is available, including `file://` when permitted.
-- Native gallery touch scrolling and contact `<details>` function without JavaScript. Animated effects degrade gracefully and respect `prefers-reduced-motion`.
-- Section reveals use IntersectionObserver, not scroll-loop animation. No loading screen.
+Only use original photos for official publication with owner's permission and the appropriate consent for identifiable customers.
 
-## Authenticity and verification
-**Business contact is intentionally disabled**. The previous demo contained an unverified number, address and WhatsApp/Maps links; those were removed. `CONTACT` in `assets/experience.js` centralizes empty/unverified contact configuration. Do not activate links until the owner verifies them.
+## Core files
+- `index.html`: four sections, photograph viewer and floating CTA markup
+- `assets/experience.css`: theme, responsive layout, gallery viewer and CSS-only light reflection
+- `assets/experience.js`: BM/EN, menu, gallery, photo viewer, CTA visibility and demo contact safety
 
-The uploaded logo is the only Jong-specific image asset used. No approved real haircut, barber-at-work, red-wall interior, storefront or shop photograph was available in this repository. Unsplash photos are explicitly illustrative and must not be described as Jong's work or premises.
+## Quality
+- Existing BM/EN translations and accessible mobile navigation are retained.
+- No prices, claimed hours, reviews, counts, phone numbers or business credentials are invented.
+- Walk-in support is based on the owner's conversation; location is intentionally unlinked pending verification.
+- Motion respects `prefers-reduced-motion`.
+- No heavy animation libraries, video auto-play, backend or artificial loading screen.
 
-Before official deployment: obtain owner approval, licensed original photos, verified contact/location/services/hours and permission to use branding. Do not remove the portfolio disclaimer without authorization.
+## Important final QA (not yet browser-tested)
+Open the branch on mobile and at 320, 375, 390, 430, 768, 1024 and 1440px. Confirm gallery image/file ordering, text wrapping, hero photo crop, BM/EN labels, menu focus trapping, image dialog and Escape, light sweep, sticky CTA visibility, safe area, reduced motion and console errors.
 
-## Demo constraints
-No fabricated prices, hours, services, reviews, customer counts, credentials, history, booking system or official affiliation.
-
-## Review / testing checklist
-
-- Tested in a JavaScript DOM simulation: BM → EN → BM translation, preference persistence, translated menu labels, opening/closing the modal, Escape and focus return, gallery arrows and position indicator.
-- Static inspections: precisely four main sections, no unverified contact destination or phone/address retained, all bilingual keys present, JavaScript syntax valid.
-- **Visual browser testing is still needed on your PC**: use Chromium device toolbar at **320, 375, 390, 430, 768, 1024, and 1440px**, check horizontal overflow, heading wrapping, image crop, tap targets, focus trapping, scrolling, image load status, JavaScript console and reduced-motion rendering. None of these browser viewport checks is claimed complete.
-- If an image provider is unavailable offline or blocks traffic, use replacement photos with appropriate rights and preserve the illustrative labels until Jong's approved originals are supplied.
+The code has static checks, but actual screenshot/device QA is still required.

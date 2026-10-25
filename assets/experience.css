@@ -316,3 +316,99 @@ body.menu-open { overflow:hidden; }
   .experience-heading .section-title { font-size:clamp(3.35rem,12vw,5.7rem); }
   .section-title,.closing-title { overflow-wrap:anywhere; }
 }
+
+/* FINAL VISUAL POLISH — real Jong photo presentation and editorial controls */
+.hero-visual img { object-position:54% 40%; filter:saturate(.92) contrast(1.08); }
+.hero-shade { background:linear-gradient(90deg,rgba(9,10,13,.92),rgba(9,10,13,.68) 44%,rgba(9,10,13,.13) 100%),linear-gradient(0deg,rgba(9,10,13,.94),transparent 42%); }
+.hero-title { text-shadow:0 6px 35px rgba(0,0,0,.3); }
+.gallery-track { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.gallery-photo-button { display:block; width:100%; border:0; border-radius:0; text-align:left; padding:0; color:inherit; cursor:zoom-in; }
+.gallery-photo-button:focus-visible { outline:3px solid var(--red); outline-offset:-3px; }
+.gallery-photo img { filter:saturate(.89) contrast(1.06); }
+.gallery-photo-button:hover img,.gallery-photo-button:focus-visible img { filter:saturate(1) contrast(1.06); transform:scale(1.055); }
+.experience-image-large > img { filter:saturate(.93) contrast(1.08); }
+.experience-image-small img { filter:saturate(.93); }
+.photo-tag { backdrop-filter:blur(4px); }
+.closing-photo { z-index:-2; position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.closing-photo img { width:100%; height:100%; object-fit:cover; object-position:center 42%; opacity:.32; filter:saturate(.72) contrast(1.15); }
+.closing-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(9,10,13,.96),rgba(9,10,13,.8) 63%,rgba(9,10,13,.62)); }
+.closing-glow { opacity:.55; }
+.closing-description { color:#d0cfd4; }
+
+/* Specular light-sweep. Shines only on the two major CTAs and mobile directions. */
+.button-sheen,.floating-directions { position:relative; isolation:isolate; overflow:hidden; }
+.button-sheen::before,.floating-directions::before {
+  content:""; position:absolute; width:34%; height:180%; top:-40%; left:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.08) 26%,rgba(255,255,255,.31) 52%,rgba(255,255,255,.08) 73%,transparent);
+  transform:translate3d(-190%,0,0) skewX(-23deg);
+  pointer-events:none; z-index:0;
+}
+.button-sheen > *,.floating-directions > * { position:relative; z-index:1; }
+.button-sheen:active { transform:scale(.98); }
+@keyframes jongLightSweep {
+  0%,7% { transform:translate3d(-190%,0,0) skewX(-23deg); }
+  23%,100% { transform:translate3d(420%,0,0) skewX(-23deg); }
+}
+@media (prefers-reduced-motion:no-preference) {
+  .hero .button-sheen::before { animation:jongLightSweep 6s ease-in-out 1s infinite; }
+  .contact-disclosure[open] .button-sheen::before { animation:jongLightSweep 6s ease-in-out infinite; }
+  .floating-directions.is-visible::before { animation:jongLightSweep 6s ease-in-out .4s infinite; }
+}
+/* The floating CTA appears only after the hero and before the final section. */
+.floating-directions {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  position:fixed; z-index:89; left:50%; bottom:calc(12px + env(safe-area-inset-bottom,0px));
+  width:min(360px,calc(100% - 32px)); height:54px; padding:0 17px;
+  background:var(--red); border:1px solid rgba(255,255,255,.17);
+  border-radius:10px; box-shadow:0 14px 35px rgba(0,0,0,.45),0 3px 16px rgba(240,68,62,.24);
+  color:#fff; font-size:12px; font-weight:800; letter-spacing:.06em;
+  opacity:0; visibility:hidden; pointer-events:none; transform:translate3d(-50%,14px,0);
+  transition:opacity .26s ease,transform .26s var(--ease),visibility .26s;
+  touch-action:manipulation;
+}
+.floating-directions.is-visible { opacity:1; visibility:visible; pointer-events:auto; transform:translate3d(-50%,0,0); }
+.floating-directions:active { transform:translate3d(-50%,0,0) scale(.98); }
+.floating-left,.floating-right { display:inline-flex; align-items:center; gap:9px; white-space:nowrap; }
+.floating-pin { font:700 25px/1 Arial,sans-serif; transform:translateY(-2px); }
+.floating-right > span:last-child { font-size:22px; line-height:1; }
+.floating-demo { border:1px solid rgba(255,255,255,.7); padding:3px 4px; font-size:8px; letter-spacing:.04em; }
+body.menu-open .floating-directions,body.viewer-open .floating-directions { opacity:0!important; visibility:hidden!important; pointer-events:none!important; }
+@media (min-width:768px) { .floating-directions { display:none!important; } }
+@media (max-width:767px) {
+  .closing-inner { padding-bottom:clamp(110px,18vw,165px); }
+  .hero-visual img { object-position:59% center; }
+  .hero-shade { background:linear-gradient(0deg,rgba(9,10,13,.98),rgba(9,10,13,.75) 42%,rgba(9,10,13,.18)),linear-gradient(90deg,rgba(9,10,13,.46),transparent 80%); }
+}
+@media (max-width:640px) {
+  .gallery-track { grid-template-columns:none; }
+  .gallery-photo-button { flex:none; }
+}
+@media (max-width:350px) {
+  .floating-directions { padding:0 13px; font-size:11px; }
+  .floating-demo { font-size:7px; }
+}
+
+/* Fullscreen image viewer, native <dialog> semantics with keyboard support. */
+.photo-dialog {
+  width:min(1100px,calc(100vw - 24px)); max-width:none; max-height:calc(100dvh - 24px);
+  padding:clamp(15px,3vw,28px); margin:auto; overflow:auto;
+  border:1px solid #3b3c45; border-radius:10px; background:#111218; color:#fff;
+  box-shadow:0 30px 90px rgba(0,0,0,.55);
+}
+.photo-dialog::backdrop { background:rgba(0,0,0,.88); backdrop-filter:blur(9px); }
+.viewer-content { display:grid; grid-template-columns:45px minmax(0,1fr) 45px; align-items:center; gap:clamp(6px,2vw,22px); margin-top:32px; }
+.viewer-close { position:absolute; right:14px; top:9px; display:grid; place-items:center; color:#fff; background:none; border:0; font-size:32px; width:42px; height:42px; }
+.viewer-nav { width:45px; height:45px; display:grid; place-items:center; color:#fff; background:#242630; border:1px solid #595963; border-radius:50%; font-size:20px; }
+.viewer-close:hover,.viewer-nav:hover { background:var(--red); }
+.viewer-figure { min-width:0; }
+.viewer-figure img { margin:auto; max-width:100%; max-height:calc(100dvh - 170px); width:auto; height:auto; object-fit:contain; }
+.viewer-figure figcaption { display:flex; justify-content:space-between; gap:10px; padding:13px 0; font-size:12px; font-weight:700; letter-spacing:.12em; }
+@media (max-width:640px) {
+  .viewer-content { grid-template-columns:35px minmax(0,1fr) 35px; gap:4px; }
+  .viewer-nav { width:35px; height:44px; border-radius:4px; }
+  .viewer-figure img { max-height:calc(100dvh - 165px); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .button-sheen::before,.floating-directions::before { animation:none!important; }
+  .floating-directions { transition:none; }
+}
