@@ -1,33 +1,44 @@
-# Jong Barbershop Puchong — Website Demo
+# Jong Barbershop — Cinematic Portfolio Concept
 
-Independent **concept website**, created as a portfolio sample to present to Jong Barbershop Puchong. Not commissioned, endorsed, or the official website.
+An **unofficial** mobile-first client-pitch concept for Jong Barbershop. Not commissioned, endorsed, or the official business website.
 
-## Preview locally
+## Run locally
+Download or clone the repository, then open `index.html` in Chrome, Edge, Safari or Firefox. No npm, build, backend, auth or API keys.
+Keep `assets/` beside `index.html`. Example photos and Google Fonts require internet. CSS fallback surfaces still render offline.
 
-Open `index.html` in any modern web browser. No npm, installation, environment variables, or build step required.
+PowerShell:
+```powershell
+git clone https://github.com/Arrjack8847/jong-barbershop-demo.git
+cd jong-barbershop-demo
+Start-Process .\index.html
+```
 
-The page loads `assets/experience.css` and `assets/experience.js`; keep the `assets/` directory next to `index.html`. Google Fonts and example images are fetched from third-party services when online.
+## Four sections
+1. **Cinematic hero** — logo, BM/EN controls, photo (explicitly illustrative), staggered headline and two anchored CTAs.
+2. **Haircut inspiration** — labeled reference imagery, touch swipe and CSS scroll snapping on mobile, editorial desktop grid, keyboard arrows and index.
+3. **Shop experience concept** — atmospheric editorial images clearly labeled as placeholders, not Jong's real staff or interior.
+4. **Contact / closing CTA** — prominent demo-only contact disclosure and Jong-branded footer.
 
-## Included
+On phones/tablets a full-screen menu provides Escape handling, focus trapping between visible menu controls, focus return, and scroll lock.
 
-- Responsive, mobile-first one-page layout with **BM (default) / EN** language toggle
-- Language preference remembered when browser storage is available; headings, navigation, buttons, accessibility labels and WhatsApp enquiry text switch languages
-- Cinematic hero entrance, scroll-triggered section reveals, hover interactions and smooth transitions (with reduced-motion support)
-- Haircut *inspiration* gallery (not the shop's actual work)
-- WhatsApp enquiry buttons, tap-to-call link, and Google Maps search
-- Sections for location and information to confirm before visiting
-- Keyboard-accessible mobile navigation
+## Implementation
+- `index.html`: four semantic sections; links are local anchors. No inline CSS or scripts.
+- `assets/experience.css`: theme tokens, mobile/desktop responsive rules, menu, image and reveal motion.
+- `assets/experience.js`: BM/EN translation dictionaries, persistence, menu logic, gallery position and scroll reveals.
+- `assets/jong-barbershop-logo.jpg`: existing supplied Jong logo image, retained without reworking artwork.
+- Vanilla HTML/CSS/JS only. No Lovable, frameworks, animation dependencies or booking/payment flow.
 
-## Before offering as the business's official site
+## Accessibility / performance
+- Language defaults to BM; EN is fully translated including labels and metadata. Preference persists when storage is available, including `file://` when permitted.
+- Native gallery touch scrolling and contact `<details>` function without JavaScript. Animated effects degrade gracefully and respect `prefers-reduced-motion`.
+- Section reveals use IntersectionObserver, not scroll-loop animation. No loading screen.
 
-- Obtain the business owner's approval and confirm name, address and phone number.
-- Verify current pricing, offered services, hours and whether appointments are accepted.
-- Replace inspiration pictures with the shop's own licensed, approved photos.
-- The provided Jong Barbershop logo photo is used in the header, hero and footer. Request the original high-resolution or transparent logo from the owner before launching an official site.
-- Remove **demo** disclaimers only after authorization.
+## Authenticity and verification
+**Business contact is intentionally disabled**. The previous demo contained an unverified number, address and WhatsApp/Maps links; those were removed. `CONTACT` in `assets/experience.js` centralizes empty/unverified contact configuration. Do not activate links until the owner verifies them.
 
-## Technical
+The uploaded logo is the only Jong-specific image asset used. No approved real haircut, barber-at-work, red-wall interior, storefront or shop photograph was available in this repository. Unsplash photos are explicitly illustrative and must not be described as Jong's work or premises.
 
-Static HTML + CSS + vanilla JavaScript. Main HTML: `index.html`. Animation and internationalization: `assets/experience.css`, `assets/experience.js`. The branding now uses a small optimized version of the supplied logo photo at `assets/jong-barbershop-logo.jpg`. No Lovable, framework, API key, authentication, or backend.
+Before official deployment: obtain owner approval, licensed original photos, verified contact/location/services/hours and permission to use branding. Do not remove the portfolio disclaimer without authorization.
 
-Designed as a pitch demo for JackNex Studio, 2026.
+## Demo constraints
+No fabricated prices, hours, services, reviews, customer counts, credentials, history, booking system or official affiliation.
